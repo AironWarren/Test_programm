@@ -1,8 +1,8 @@
-from utils import division
+from my_fancs.utils import division
 import pytest
 
 
-# декоратор pytest.mark.parametrize(строка с переменными, лист с кортежами, которые мы распаковываем в переменные)
+# декоратор - @ - это функция декоратора pytest.mark.parametrize(строка с переменными, лист с кортежами, которые мы распаковываем в переменные)
 @pytest.mark.parametrize('a, b, expected_result', [(10, 2, 5),
                                                    (20, 10, 2),
                                                    (30, -3, -10),
